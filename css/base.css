@@ -1,0 +1,251 @@
+/*----- 各页面共同样式部分 -----*/
+@font-face {
+  font-family: "myFont";
+  src: url("fonts/glyphicons-halflings-regular.ttf");
+}
+[class*= " icon-"]{
+  font-family: "myFont";
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    vertical-align: baseline;
+} 
+li { 
+  list-style: none; 
+}
+a,a:hover { 
+  text-decoration: none; 
+  color: #566573;
+}
+body{
+  background: #eee;
+}
+
+/****** 顶部样式 ******/
+.menu{
+  padding-top:10px;
+  margin-bottom:0;
+  border-bottom: 0;
+}
+.menu-search{
+  left:-32px;
+  top:5px;
+  font-size: 17px;
+  color: #748594;
+  cursor: pointer;
+}
+.navbar-default .menu-info li.active a,.navbar-default .container .menu-info li a:hover{
+  background-color:transparent;
+  border-bottom:3px solid #0AB4F7;
+}
+/****** /顶部样式 ******/
+
+
+/****** 登录注册界面 ******/
+.msg_box{
+  width: 200px;
+  height: 365px;
+  position: absolute;
+  top: 63px;
+  right:16px;
+  background-color: #fff;
+  z-index: 100;
+  display: none;
+}
+/* 个人中心 */
+.profile-number {
+  position: relative; 
+  background: #333;
+  height: 110px;
+}
+.profile-number .user-icon{
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  background: url(../images/person.svg) no-repeat 0 0;
+  background-color: #7e8c8d;
+}
+.profile-number .user-info-top{
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%);
+}
+.profile_my_order {
+  position: relative;
+  background: #fff;
+}
+.profile_my_order::before {
+  content: '';
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e4e4;
+}
+.profile_my_order .my_order {
+  display: flex;
+  align-items: center;
+  padding:0 10px;
+}
+.profile_my_order .my_order .iconfont{
+  width: 25px;
+  height: 20px;   
+  margin-right:5px;
+}
+.profile_my_order .my_order:nth-of-type(1) .iconfont{
+  background: url(../images/mail.svg) no-repeat 0 -2px;
+}
+.profile_my_order .my_order:nth-of-type(2) .iconfont{
+  background: url(../images/chat.svg) no-repeat 0 -2px;
+}
+.profile_my_order .my_order:nth-of-type(3) .iconfont{
+  background: url(../images/star.svg) no-repeat 0 -2px;
+}
+.profile_my_order .my_order .my_order_div {
+  width: 100%;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 18px 10px 18px 0;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+.profile_my_order .my_order .my_order_icon {
+  width: 16px;
+  height: 16px;
+  background: url(../images/right.svg) no-repeat 0 0;
+}
+.msg_out{
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 4px;
+  background: #c70b0b;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  line-height: 36px;
+  border: 0;
+}
+/* 登录注册 */
+.loginInner {
+  padding-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+  display: none;
+}
+
+.login_header  {
+  padding-bottom: 10px;
+  text-align: center;
+}
+.login_header a {
+  color: #333;
+  font-size: 18px;
+  padding-bottom: 4px;
+}
+.login_header a:first-child {
+  margin-right: 40px;
+}
+.login_header a.on {
+  color: #02a774;
+  font-weight: 600;
+  border-bottom: 2px solid #02a774;
+}
+.login_content form div {
+  display: none;
+}
+.login_content form div.on {
+  display: block;
+}
+.login_content form div input {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: 0;
+  font:14px Arial;
+}
+.login_content form div input:focus {
+  border: 1px solid #02a774;
+}
+.login_content form div .input_message {
+  position: relative;
+  margin-top: 16px;
+  height: 40px;
+  font-size: 14px;
+}
+.login_content form div .get_verification {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 88px;
+}
+.login_content form div .reg_hint {
+  margin-top: 12px;
+  color: #999;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+.login_content form div .reg_hint a {
+  color: #02a774;
+}
+.login_content form .login_submit,.reg_submit {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 4px;
+  background: #4cd96f;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 42px;
+  border: 0;
+}
+.go_back {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/back.svg) no-repeat 0 0;
+}
+/****** /登录注册界面 ******/
+
+/****** 底部样式 *******/
+footer { 
+  width: 100%; 
+  background: #333; 
+  color: #a5a4a4; 
+  text-align: center; 
+  padding: 15px 0; 
+  clear: both; 
+}
+/****** /底部样式 *******/

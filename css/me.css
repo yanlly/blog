@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding:0;
+}
+a{
+    color:#333;
+    text-decoration: none;
+}
+.resume{
+    width:820px;
+    height:1160px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+    position: relative;
+    padding:30px;
+    margin:10px auto;
+    box-sizing: border-box;
+}
+.resume_top{
+    position: relative;
+    width:100%;
+    height: 160px;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+.top_img{
+    float:left;
+    width:120px;
+    height:150px;
+    border: 4px solid #e5e5e5;
+}
+.top_img img{
+    width:120px;
+    height:150px;
+}
+.top_msg{
+    float:left;
+    width:550px;
+    height:150px;
+    margin-left:70px;
+}
+.name{
+    font-size:30px;
+    margin:25px 0;
+    color:#333;
+}
+.msg{
+    color:#747474;
+}
+
+.msg_age{
+    padding-left:22px;
+    margin-right:30px;
+    background: url(../images/person.png) no-repeat 0 0;
+}
+.msg_phone{
+    padding-left:22px;
+    margin-right:30px;
+    background: url(../images/phone.png) no-repeat 0 0;
+}
+.msg_email{
+    padding-left:24px;
+    background: url(../images/email.png) no-repeat 0 2px;
+}
+
+
+.resume_body{
+    width:100%;
+    height: 900px;
+}
+.body_content{
+    width:100%;
+    position: relative;
+}
+.body_content::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 160px;
+    height: 100%;
+    border-left: 1px solid #0b70bd;
+}
+.dt_title{
+    color: #0b70bd;
+    font-size: 20px;
+    word-break: break-word;
+    font-weight: bold;
+}
+.dt_title::before{
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 160px;
+    right: 0;
+    border-top: 1px solid #0b70bd;
+}
+.dt_title i{
+    position: absolute;
+    left: 147px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+.school i{
+    background: #0b70bd url(../images/school.png) no-repeat 2px 2px;
+}
+.object i{
+    background: #0b70bd url(../images/object.png) no-repeat 2px 2px;
+}
+.job i{
+    background: #0b70bd url(../images/job.png) no-repeat 2px 2px;
+}
+.skill i{
+    background: #0b70bd url(../images/skill.png) no-repeat 2px 2px;
+}
+.study i{
+    background: #0b70bd url(../images/study.png) no-repeat 2px 2px;
+}
+
+
+.dd_content{
+    width:100%;
+    box-sizing: border-box;
+    padding:5px;
+}
+.dd_top{
+    line-height:23px;
+    font-weight: bold;
+    margin:5px 0;
+    color:#333;
+}
+.dd_top span:nth-child(1){
+    float:left;
+    width: 185px;
+    margin-right: 5px;
+}
+.dd_top span:nth-child(3){
+    float:right;
+}
+.dd_body{
+    margin-left:210px; 
+    font-size: 14px;
+    line-height: 1.8;
+    color:#747474;
+}

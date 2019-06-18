@@ -1,0 +1,134 @@
+/****** 轮播图 *******/
+.banner .item{
+	height: 300px;
+}
+.banner .item:nth-child(1){
+	background: url(../images/carousel1_1920x400.jpg) no-repeat center center;
+}
+.banner .item:nth-child(2){
+	background: url(../images/carousel2_1920x400.jpg) no-repeat center center;
+}
+.banner .item:nth-child(3){
+	background: url(../images/carousel3_1920x400.jpg) no-repeat center center;
+}
+/****** /轮播图 *******/
+
+
+/****** 文章 *******/
+.blogs{
+	margin:20px 0;
+	background: #fff;
+	padding:0 20px 20px;
+}
+.blogs h2{
+	margin: 15px 0;
+}
+.blogs h2 .blogadr{
+	font-size: 16px;
+	padding:3px 6px;
+	color: #fff;
+	background-color: #d9534f;
+	margin-right: 15px;
+	position: relative;
+	top:-2px;
+}
+.blogs h2 .blogtitle{
+	font-size: 20px;
+}
+.blogs .blogpic{
+	padding-left: 0;
+}
+.blogs .blogmsg{
+	padding:0;
+}
+.blogs .blogmsg .blogtext{
+	font-size: 15px;
+	line-height:25px;
+	height:120px;
+	overflow: hidden;
+}
+.blogs .blogmsg .bloginfo  li { 
+	float: left; 
+	font-size: 12px; 
+	padding-left: 20px; 
+	margin-right: 15px; 
+	color: #748594; 
+	line-height: 18px;
+	background: url(../images/auicon.jpg) no-repeat 0 0;
+}
+.blogs .blogmsg .bloginfo li a { 
+	color: #748594; 
+}
+.blogs .blogmsg .bloginfo li a:hover { 
+	color: black;
+}
+.blogs .blogmsg .bloginfo .blog_time { 
+	background-position: 0 -45px; 
+}
+.blogs .blogmsg .bloginfo .blog_view { 
+	background-position: 0 -65px; 
+}
+/****** /文章 *******/
+
+
+/****** 页码 *******/
+.pagelist { 
+	height: 20px;
+	margin:18px 0 10px;
+	padding: 0 20px;
+}
+.pagelist li:nth-child(1){
+	float:left;
+}
+.pagelist li:nth-child(2){
+	float:right;
+}
+.pagelist li:hover{
+	opacity: 0.7;
+}
+
+.pagelist li .prepage{
+	padding-left: 25px;
+	background: url(../images/left.png) no-repeat 0 0;
+	background-size: 16px;
+}
+.pagelist li .nextpage{
+	padding-right: 25px;
+	background: url(../images/right.png) no-repeat 100% 0;
+	background-size: 16px;
+}
+/****** /页码 *******/
+
+
+/****** 侧边*******/
+.about { 
+	margin-top:20px;
+	width:360px; 
+	background: white url(../images/bg.jpg) no-repeat top center; 
+	overflow: hidden;
+	background-size:360px 130px; 
+}
+.about1{
+	position: fixed;
+    top: 0px;	
+}
+.about .avatar { 
+	margin: 80px auto 20px; 
+	width: 100px; 	
+}
+.about .avatar img {
+	border-radius: 50%; 
+	background: #1296db;
+}
+.about .abname { 
+	color: #3f3f3f; 
+	font-weight: bold; 
+	margin-bottom: 10px; 
+	text-align: center; 
+}
+.about .abtext { 
+	padding: 20px 40px; 
+	color: #9a9a9a; 
+	line-height: 26px; 
+}
+/****** /侧边 *******/
