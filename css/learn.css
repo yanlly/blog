@@ -1,6 +1,8 @@
 .navbar-default .menu-info li.active a {
     border-bottom: 3px solid #101010;
+    color: #9d9d9d;
 }
+
 /* ******* 正文 ******** */
 .main-part{
     margin-top: 20px;
