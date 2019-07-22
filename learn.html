@@ -13,7 +13,7 @@
 </head>
     <body>
         <!-- 导航部分 -->
-        <header>
+        <header>        
             <nav class="navbar navbar-default navbar-static-top menu navbar-inverse">
                 <div class="container">
                     <div class="navbar-header">
@@ -29,100 +29,28 @@
                         <form class="navbar-form navbar-left hidden-sm">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="查找">
-                                <span class="glyphicon glyphicon-search menu-search"></span>
                             </div>
                         </form>                   
                         
                         <ul class="nav navbar-nav navbar-right menu-info">
-                            <li><a href="index.html">网站首页</a></li>
-                            <li><a href="me.html">个人简介</a></li>
-                            <li class="active"><a href="javascript:;">学习站点</a></li>
-                            <li><a href="javascript:;">学习随记</a></li>
-                            <li><a href="javascript:;" class="self">我</a></li>
+                            <li class="active"><a href="index.html">网站首页</a></li>
+                            <li><a href="me.html" target="_blank">个人简介</a></li>
+                            <li><a href="javascript:;" class="login">登录/注册</a></li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-            <!-- 个人中心 -->
-        <div class="msg_box"> 
-                <div class="profile">
-                    <section class="profile-number">
-                        <span class="user-icon"></span>
-                        <a href='javascript:'  class="user-info-top">登录/注册</a>
-                    </section>
-                
-                    <section class="profile_my_order">
-                        <a href='javascript:' class="my_order">
-                            <span class="iconfont"></span>
-                            <span class="my_order_div">我的私信</span>
-                            <span class="my_order_icon"></span>
-                        </a>
-                        <a href='javascript:' class="my_order">
-                            <span class="iconfont"></span>
-                            <span class="my_order_div">我的回复</span>
-                            <span class="my_order_icon"></span>
-                        </a>
-                        <a href="javascript:" class="my_order">
-                            <span class="iconfont"></span>
-                            <span class="my_order_div">我的收藏</span>
-                            <span class="my_order_icon"></span>
-                        </a>
-                    </section>
-                    <button class="msg_out">退出</button>  
-                </div>
-                <!-- 登录注册 -->
-                <div class="loginInner">
-                    <div class="login_header">
-                        <a href="javascript:;" class="log on">登录</a>
-                        <a href="javascript:;" class="reg">注册</a>
-                    </div>
-                    <div class="login_content">
-                        <form>
-                            <!-- 登录 -->
-                            <div class="log_box on">
-                                <section class="input_message">
-                                    <input type="tel" maxlength="11" placeholder="手机/邮箱/用户名">
-                                </section>
-                                <section class="input_message">
-                                    <input type="password" maxlength="8" placeholder="密码">              
-                                </section>
-                                <section class="input_message">
-                                    <input type="text" maxlength="11" placeholder="验证码">
-                                    <img class="get_verification" src="./images/captcha.svg" alt="验证码">
-                                </section>
-                                <button class="login_submit">登录</button>
-                            </div>
-                            <!-- 注册 -->
-                            <div class="reg_box">            
-                                <section class="input_message">
-                                    <input type="tel" maxlength="11" placeholder="手机/邮箱/用户名">
-                                </section>
-                                <section class="input_message">
-                                    <input type="password" maxlength="8" placeholder="密码">
-                                </section>
-                                <section class="input_message">
-                                    <input type="password" maxlength="8" placeholder="重复密码">             
-                                </section>
-                                <button class="reg_submit">注册</button>
-                                <p class="reg_hint">温馨提示：注册代表自动同意<a href="javascript:;">《用户服务协议》</a></p>            
-                            </div>          
-                        </form>
-                    </div>
-                    <a href="javascript:" class="go_back"></a>
-                </div>
-            </div>
+            </nav>  
         </header>
         <!-- 主体 -->
-        <div class="art_adr container">您现在的位置是：<a href="index.html">首页</a> > 学习网站</div>
         <main class="container main-part">
             <div class="row">  
                 <article class="art_content col-md-8">
                     <section class="art_box">
                         <h2 class="art_title">MDN Web Docs</h2>
                         <ul class="art_info hidden-xs hidden-sm">
-                            <li class="art_author"><a href="javascript:;">矢名</a></li>
-                            <li class="art_time">2018-5-13</li>
-                            <li class="art_view"><span class="art_view_num">1</span>已阅读</li>
+                            <li><span class="iconfont">&#xe6ce;</span>2018-5-13</li>
+                            <li><span class="iconfont">&#xe8cd;</span>1</li>
+                            <li><span class="iconfont">&#xe93c;</span>0</li>
                         </ul> 
                         <!-- 文章正文 -->
                         <div class="art_con">
@@ -135,14 +63,14 @@
                 
                     <!-- 评论模块 -->
                     <section class="comment_box">
-                        <div class="comment_title">评论一下</div>
+                        <div class="comment_title"><span class="iconfont">&#xe620;</span> 评论一下</div>
                         <div class="comment_info">
                             <textarea class="comment" placeholder="想说些什么呢..."></textarea>
                             <label for="comment-name" class="comment_name">昵称：</label>
                             <input class="name_input" type="text" id="comment-name" placeholder="必填">
                             <a href="javascipt:;" class="send">发表评论</a>
                         </div>
-                        <div class="comment_list">评论列表</div>
+                        <div class="comment_list"><span class="iconfont">&#xe93c;</span> 评论列表</div>
                         <div class="comment_msg"></div>
                     </section>
                 </article>

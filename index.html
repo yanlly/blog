@@ -32,88 +32,17 @@
                     <form class="navbar-form navbar-left hidden-sm">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="查找">
-                            <span class="glyphicon glyphicon-search menu-search"></span>
                         </div>
                     </form>                   
                     
                     <ul class="nav navbar-nav navbar-right menu-info">
                         <li class="active"><a href="index.html">网站首页</a></li>
                         <li><a href="me.html" target="_blank">个人简介</a></li>
-                        <li><a href="javascript:;">学习站点</a></li>
-                        <li><a href="javascript:;">学习随记</a></li>
-                        <li><a href="javascript:;" class="self">我</a></li>
+                        <li><a href="javascript:;" class="login">登录/注册</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- 个人中心 -->
-        <div class="msg_box"> 
-            <div class="profile">
-                <section class="profile-number">
-                    <span class="user-icon"></span>
-                    <a href='javascript:'  class="user-info-top">登录/注册</a>
-                </section>
-            
-                <section class="profile_my_order">
-                    <a href='javascript:' class="my_order">
-                        <span class="iconfont"></span>
-                        <span class="my_order_div">我的私信</span>
-                        <span class="my_order_icon"></span>
-                    </a>
-                    <a href='javascript:' class="my_order">
-                        <span class="iconfont"></span>
-                        <span class="my_order_div">我的回复</span>
-                        <span class="my_order_icon"></span>
-                    </a>
-                    <a href="javascript:" class="my_order">
-                        <span class="iconfont"></span>
-                        <span class="my_order_div">我的收藏</span>
-                        <span class="my_order_icon"></span>
-                    </a>
-                </section>
-                <button class="msg_out">退出</button>  
-            </div>
-            <!-- 登录注册 -->
-            <div class="loginInner">
-                <div class="login_header">
-                    <a href="javascript:;" class="log on">登录</a>
-                    <a href="javascript:;" class="reg">注册</a>
-                </div>
-                <div class="login_content">
-                    <form>
-                        <!-- 登录 -->
-                        <div class="log_box on">
-                            <section class="input_message">
-                                <input type="tel" maxlength="11" placeholder="手机/邮箱/用户名">
-                            </section>
-                            <section class="input_message">
-                                <input type="password" maxlength="8" placeholder="密码">              
-                            </section>
-                            <section class="input_message">
-                                <input type="text" maxlength="11" placeholder="验证码">
-                                <img class="get_verification" src="./images/captcha.svg" alt="验证码">
-                            </section>
-                            <button class="login_submit">登录</button>
-                        </div>
-                        <!-- 注册 -->
-                        <div class="reg_box">            
-                            <section class="input_message">
-                                <input type="tel" maxlength="11" placeholder="手机/邮箱/用户名">
-                            </section>
-                            <section class="input_message">
-                                <input type="password" maxlength="8" placeholder="密码">
-                            </section>
-                            <section class="input_message">
-                                <input type="password" maxlength="8" placeholder="重复密码">             
-                            </section>
-                            <button class="reg_submit">注册</button>
-                            <p class="reg_hint">温馨提示：注册代表自动同意<a href="javascript:;">《用户服务协议》</a></p>            
-                        </div>          
-                    </form>
-                </div>
-                <a href="javascript:" class="go_back"></a>
-            </div>
-        </div>
     </header>
     <!--轮播图-->
     <section>
@@ -143,17 +72,15 @@
         <div class="row">         
             <!-- 文章 -->
             <article class="col-md-8 bloglist">
-                
-                <!-- 页码 -->
-                <ul class="pagelist">
+                <ul class="pager">
                     <li><a href="javascript:;" class="prepage">上一页</a></li>
                     <li><a href="javascript:;" class="nextpage">下一页</a></li>
-                </ul>        
+                  </ul>
             </article>
             <!-- 侧边 -->
             <aside class="col-md-4 hidden-xs hidden-sm">
                 <div class="about">
-                    <div class="avatar"> <img src="images/avatar.png" alt="avatar"> </div>
+                    <div class="avatar"> <img src="images/avatar.png" alt="avatar" class="img-circle"> </div>
                     <p class="abname"><a href="me.html" target="_blank">关于我</a></p>
                     <div class="abtext">人不光是靠天生就拥有一切，而是靠从学习中所得到的一切来造就自己。 </div>
                 </div>

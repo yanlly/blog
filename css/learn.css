@@ -1,14 +1,10 @@
-/* ******* 文章地址 ******** */
-.art_adr{
-    border-bottom: #bfbfbf 1px solid; 
-    font-size: 14px;  
-    line-height: 40px; 
-    margin-bottom: 20px;
+.navbar-default .menu-info li.active a {
+    border-bottom: 3px solid #101010;
+}
+/* ******* 正文 ******** */
+.main-part{
     margin-top: 20px;
 }
-/* ******* /文章地址 ******** */
-
-/* ******* 正文 ******** */
 .art_content section {
     background-color: #fff;
 }
@@ -25,23 +21,12 @@
 .art_box .art_info li { 
     float: left; 
     font-size: 12px; 
-    padding-left: 20px; 
-    margin-right: 15px; 
     color: #748594; 
-    line-height: 18px;
-    background: url(../images/auicon.jpg) no-repeat 0 0;
+    margin-right: 10px;
 }
-.art_box .art_info li a { 
-    color: #748594; 
-}
-.art_box .art_info li a:hover { 
-    color: black;
-}
-.art_box .art_info .art_time { 
-    background-position: 0 -45px; 
-}
-.art_box .art_info .art_view { 
-    background-position: 0 -65px; 
+.art_box .art_info li .iconfont { 
+    font-size: 12px;
+    margin-right: 3px;
 }
 .art_box .art_con { 
     line-height: 30px;
@@ -64,11 +49,9 @@
 }
 .comment_box .comment_title{
     font-size: 18px;
-    padding-left: 24px;
     color:#748594;
     line-height: 2;
     border-bottom: #748594 1px solid;
-    background: url(../images/pencil.png) no-repeat 0 7px;
 }
 .comment_box .comment_info{
     width: 90%;
@@ -118,11 +101,9 @@
 .comment_box .comment_list{
     clear: both;
     margin-top: 50px;
-    padding-left: 20px;
     color:#748594;
     line-height: 2;
     border-bottom: #748594 1px solid;
-    background: url(../images/comment.png) no-repeat 0 7px;
 }
 .comment_box .comment_msg{
     width: 100%;

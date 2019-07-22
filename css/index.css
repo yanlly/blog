@@ -18,86 +18,73 @@
 .blogs{
 	margin:20px 0;
 	background: #fff;
-	padding:0 20px 20px;
+	padding:20px;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),
+				0 3px 1px -2px rgba(0,0,0,0.06), 
+				0 1px 5px 0 rgba(0,0,0,0.12), 
+				0 -1px 0.5px 0 rgba(0,0,0,0.09);
 }
-.blogs h2{
-	margin: 15px 0;
+.blogs div{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
 }
-.blogs h2 .blogadr{
-	font-size: 16px;
-	padding:3px 6px;
-	color: #fff;
-	background-color: #d9534f;
-	margin-right: 15px;
-	position: relative;
-	top:-2px;
-}
-.blogs h2 .blogtitle{
+.blogs div .blogtitle{
 	font-size: 20px;
+	color: #00A7EB;
 }
-.blogs .blogpic{
-	padding-left: 0;
-}
-.blogs .blogmsg{
-	padding:0;
-}
-.blogs .blogmsg .blogtext{
+
+.blogs .blogtext{
 	font-size: 15px;
 	line-height:25px;
-	height:120px;
+	height:52px;
+	width: 100%;
 	overflow: hidden;
+	padding: 0 15px;
+	margin-bottom: 20px;
 }
-.blogs .blogmsg .bloginfo  li { 
+.blogs div .bloginfo  li { 
 	float: left; 
-	font-size: 12px; 
-	padding-left: 20px; 
-	margin-right: 15px; 
+	font-size: 12px;
 	color: #748594; 
-	line-height: 18px;
-	background: url(../images/auicon.jpg) no-repeat 0 0;
+	margin-right: 10px;
 }
-.blogs .blogmsg .bloginfo li a { 
-	color: #748594; 
+.blogs div .bloginfo li .iconfont{ 
+	font-size: 12px;
+    margin-right: 3px;
 }
-.blogs .blogmsg .bloginfo li a:hover { 
-	color: black;
+.blogs div .more{
+	border: 1px black solid;
+	padding:8px;
+	position: relative;
+	border-radius: 3px;
+
 }
-.blogs .blogmsg .bloginfo .blog_time { 
-	background-position: 0 -45px; 
+.blogs div .more:before,
+.blogs div .more:after {
+	border: 0 solid transparent;
+	transition: all 0.25s;
+	content: '';
+	position: absolute;
+	width: 0;
 }
-.blogs .blogmsg .bloginfo .blog_view { 
-	background-position: 0 -65px; 
+.blogs div .more:before {
+	border-top: 2px solid #00A7EB;
+	left: 0px;
+	top: -5px;
+}
+.blogs div .more:after {
+	border-bottom: 2px solid #00A7EB;
+	bottom: -5px;
+	right: 0px;
+}
+
+.blogs div .more:hover:before,
+.blogs div .more:hover:after {
+	height: 100%;
+	width: 100%;
 }
 /****** /文章 *******/
-
-
-/****** 页码 *******/
-.pagelist { 
-	height: 20px;
-	margin:18px 0 10px;
-	padding: 0 20px;
-}
-.pagelist li:nth-child(1){
-	float:left;
-}
-.pagelist li:nth-child(2){
-	float:right;
-}
-.pagelist li:hover{
-	opacity: 0.7;
-}
-
-.pagelist li .prepage{
-	padding-left: 25px;
-	background: url(../images/left.png) no-repeat 0 0;
-	background-size: 16px;
-}
-.pagelist li .nextpage{
-	padding-right: 25px;
-	background: url(../images/right.png) no-repeat 100% 0;
-	background-size: 16px;
-}
-/****** /页码 *******/
 
 
 /****** 侧边*******/
@@ -107,6 +94,10 @@
 	background: white url(../images/bg.jpg) no-repeat top center; 
 	overflow: hidden;
 	background-size:360px 130px; 
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12),
+				0 3px 1px -2px rgba(0,0,0,0.06), 
+				0 1px 5px 0 rgba(0,0,0,0.12), 
+				0 -1px 0.5px 0 rgba(0,0,0,0.09);
 }
 .about1{
 	position: fixed;
@@ -117,7 +108,6 @@
 	width: 100px; 	
 }
 .about .avatar img {
-	border-radius: 50%; 
 	background: #1296db;
 }
 .about .abname { 
