@@ -144,7 +144,7 @@ $("body").delegate(".reg","click",function(){
 	function getBlogList(){
 		$.ajax({
 			type:"get",
-			url:"https://github.com/yanlly/blog/blob/master/bloglist.json",			
+			url:"https://yanlly.github.io/blog/bloglist.json",			
 			success: function (data) {
 				if(data.length-k*n<n){  //最后一页渲染剩余的文章篇数
 					for(i=(0+k*n);i<data.length;i++){
